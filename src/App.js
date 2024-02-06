@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import NavbarCom from "./components/navbar";
+// import Intro from "./components/intro";
+// import Event from "./components/Event";
+import List from "./components/list";
+import TesJson from "./page/json";
+import Tampilan from "./page/tampilan";
+
+import {
+  BrowserRouter,
+  Route,
+  Switch,
+} from "react-router-dom/cjs/react-router-dom.min";
+import "./App.css";
+import Profilee from "./page/Profilee";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavbarCom />
+      <TesJson />
+      <BrowserRouter>
+        <main>
+          <Switch>
+            <Route path="/" component={Tampilan} exact />
+            <Route path="/data_diri" component={Profilee} exact />
+          </Switch>
+        </main>
+      </BrowserRouter>
+    </>
   );
 }
 

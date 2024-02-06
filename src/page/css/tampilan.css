@@ -1,0 +1,99 @@
+/* Global Styles */
+body {
+  font-family: "Arial", sans-serif;
+}
+
+/* Header Styles */
+header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 5rem 0;
+}
+
+/* Section Styles */
+.page-section {
+  padding: 4rem 0;
+}
+
+.bg-faded {
+  background-color: #eef4fc;
+}
+
+/* Product Card Styles */
+.img-container {
+  overflow: hidden;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #007bff;
+  color: #fff;
+  padding: 3rem 0;
+}
+
+/* Button Styles */
+.btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+}
+
+.btn-light {
+  background-color: #fff;
+  color: #007bff;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* tampilan.css */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 80%;
+  max-height: 80%;
+  overflow: hidden;
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.modal-content img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  .col-lg-6 {
+    margin-bottom: 2rem;
+  }
+}
